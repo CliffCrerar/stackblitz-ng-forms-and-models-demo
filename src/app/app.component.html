@@ -1,0 +1,72 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<form ngForm #personForm="ngForm" (submit)="onSubmitForm()">
+  <label
+    for="firstName">First Name</label>
+  <br/>
+
+  <input
+    [(ngModel)]="model.firstName"
+    type="text"
+    id="firstName"
+    name="firstName"
+    placeholder="first name here">
+  <br/>
+
+  <label
+    for="lastName">Last Name</label>
+  <br/>
+
+  <input
+    id="lastName"
+    [(ngModel)]="model.lastName"
+    type="text"
+    id="lastName"
+    name="lastName"
+    placeholder="last name here">
+  <br/>
+
+  <label
+    for="dateOfBirth">Date of Birth</label>
+  <br/>
+
+  <input
+    id="dateOfBirth"
+    [(ngModel)]="model.dateOfBirth"
+    type="datetime-local"
+    id="dateOfBirth"
+    name="dateOfBirth"
+    placeholder="Date of birth name here">
+  <br/>
+
+  <label
+    for="age">Age</label>
+  <br/>
+
+  <input
+    id="age"
+    [(ngModel)]="model.age"
+    type="number"
+    id="age"
+    name="age"
+    placeholder="Age here">
+  <br/>
+
+  <label
+    for="homeTown">HomeTown</label>
+  <br/>
+
+  <input
+    id="homeTown"
+    [(ngModel)]="model.homeTown"
+    type="text"
+    id="homeTown"
+    name="homeTown"
+    placeholder="Hometown name here">
+  <br/>
+
+  <button name="submit_form">Submit</button>
+</form>
