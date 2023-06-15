@@ -1,1 +1,8 @@
 /* Add application styles & imports to this file! */
+
+img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  display: block;
+}

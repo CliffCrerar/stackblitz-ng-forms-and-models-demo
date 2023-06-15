@@ -1,24 +1,26 @@
+<int-logo></int-logo>
+
 <hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Demonstration of various ways to implement an Typescript class as a model.<br />
+  See the file <code>person.model.ts</code>
 </p>
 
 <form ngForm #personForm="ngForm" (submit)="onSubmitForm()">
-  <label
-    for="firstName">First Name</label>
-  <br/>
+  <label for="firstName">First Name</label>
+  <br />
 
   <input
     [(ngModel)]="model.firstName"
     type="text"
     id="firstName"
     name="firstName"
-    placeholder="first name here">
-  <br/>
+    placeholder="first name here"
+  />
+  <br />
 
-  <label
-    for="lastName">Last Name</label>
-  <br/>
+  <label for="lastName">Last Name</label>
+  <br />
 
   <input
     id="lastName"
@@ -26,12 +28,12 @@
     type="text"
     id="lastName"
     name="lastName"
-    placeholder="last name here">
-  <br/>
+    placeholder="last name here"
+  />
+  <br />
 
-  <label
-    for="dateOfBirth">Date of Birth</label>
-  <br/>
+  <label for="dateOfBirth">Date of Birth</label>
+  <br />
 
   <input
     id="dateOfBirth"
@@ -39,12 +41,12 @@
     type="datetime-local"
     id="dateOfBirth"
     name="dateOfBirth"
-    placeholder="Date of birth name here">
-  <br/>
+    placeholder="Date of birth name here"
+  />
+  <br />
 
-  <label
-    for="age">Age</label>
-  <br/>
+  <label for="age">Age</label>
+  <br />
 
   <input
     id="age"
@@ -52,12 +54,12 @@
     type="number"
     id="age"
     name="age"
-    placeholder="Age here">
-  <br/>
+    placeholder="Age here"
+  />
+  <br />
 
-  <label
-    for="homeTown">HomeTown</label>
-  <br/>
+  <label for="homeTown">HomeTown</label>
+  <br />
 
   <input
     id="homeTown"
@@ -65,8 +67,9 @@
     type="text"
     id="homeTown"
     name="homeTown"
-    placeholder="Hometown name here">
-  <br/>
+    placeholder="Hometown name here"
+  />
+  <br />
 
   <button name="submit_form">Submit</button>
 </form>
