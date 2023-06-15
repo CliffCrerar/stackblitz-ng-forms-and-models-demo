@@ -1,8 +1,21 @@
 /* Add application styles & imports to this file! */
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+html {
+  font-family: Fira Code;
+}
+
 img {
   width: 25%;
   height: auto;
   margin: auto;
   display: block;
+}
+
+code {
+  background: rgb(199, 255, 162);
+  color: rgb(46, 46, 46);
+  padding: 1px 3px;
+  border-radius: 5px;
 }
